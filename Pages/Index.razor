@@ -28,13 +28,22 @@
 		</audio>
 	}
 </div>
+<div>
+	<p>Testing</p>
+	<audio controls>
+		<source src="sounds/testing/switch.wav" type="audio/wav" />
+	</audio>
+</div>
 
 @code {
 	public string audioTest;
 
-	private void ConcatAudio()
+	public void ConcatAudio()
 	{
-		var first = new AudioFileReader("/sounds/testing/switch.wav");
+		using (WaveFileReader reader = new WaveFileReader("sounds/testing/switch.wav"))
+		{
+			Debug.WriteLine("Weh");
+		}
 
 		//var playlist = new ConcatenatingSampleProvider(new[] { first, first });
 
