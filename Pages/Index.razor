@@ -30,15 +30,17 @@
 </div>
 
 @code {
-	public string audioTest = "sounds/testing/output.wav";
+	public string audioTest;
 
 	private void ConcatAudio()
 	{
-		var first = new AudioFileReader("sounds/testing/switch.wav");
+		var first = new AudioFileReader("/sounds/testing/switch.wav");
 
-		var playlist = new ConcatenatingSampleProvider(new[] { first, first });
+		//var playlist = new ConcatenatingSampleProvider(new[] { first, first });
 
-		WaveFileWriter.CreateWaveFile16("sounds/testing/output.wav", playlist);
+		//WaveFileWriter.CreateWaveFile16("sounds/testing/output.wav", playlist);
+
+		//audioTest = "sounds/testing/output.wav";
 	}
 	
 }
