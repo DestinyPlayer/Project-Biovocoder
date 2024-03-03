@@ -11,6 +11,11 @@
 	<p>Weh</p>
 </div>
 <div>
+	<button @onclick="ConcatAudio">
+		Concat Audio
+	</button>
+</div>
+<div>
 	@if (audioTest == null)
 	{
 		<p>WAITING FOR AUDIO</p>
@@ -27,7 +32,7 @@
 @code {
 	public string audioTest = "sounds/testing/output.wav";
 
-	protected override async Task OnInitializedAsync()
+	private void ConcatAudio()
 	{
 		var first = new AudioFileReader("sounds/testing/switch.wav");
 
