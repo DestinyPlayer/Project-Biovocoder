@@ -28,16 +28,14 @@
 
 @code {
 	public string audioTest = "sounds/testing/output.wav";
-	class AudioControls
+
+	protected override async Task OnInitializedAsync()
 	{
-		static void AudioConcater()
-		{
-			var first = new AudioFileReader("sounds/testing/switch.wav");
+		var first = new AudioFileReader("sounds/testing/switch.wav");
 
-			var playlist = new ConcatenatingSampleProvider(new[] { first, first });
+		var playlist = new ConcatenatingSampleProvider(new[] { first, first });
 
-			WaveFileWriter.CreateWaveFile16("sounds/testing/output.wav", playlist);
-		}
+		WaveFileWriter.CreateWaveFile16("sounds/testing/output.wav", playlist);
 	}
 	
 }
