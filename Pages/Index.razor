@@ -11,7 +11,7 @@
 	<p>Weh</p>
 </div>
 <div>
-	<button @onclick="ConcatAudio">
+	<button @onclick="AudioConcater.ConcatAudio">
 		Concat Audio
 	</button>
 </div>
@@ -37,12 +37,5 @@
 
 @code {
 	public AudioFileReader? audioTest;
-	public void ConcatAudio()
-	{
-		using (var reader = new MediaFoundationReader("sounds/testing/switch.wav"))
-		{
-			MediaFoundationEncoder.EncodeToMp3(reader, audioTest);
-		}
-		Console.WriteLine("Testing!");
-	}
+
 }

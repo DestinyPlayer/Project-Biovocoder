@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using NAudio.Wave.SampleProviders;
+using NAudio.Wave;
 using Project_Biovocoder;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
