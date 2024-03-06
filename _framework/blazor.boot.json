@@ -1,7 +1,7 @@
 {
   "entryAssembly": "Project-Biovocoder",
   "resources": {
-    "hash": "sha256-rwMf15TdbJm6dX4grsxVwVe6R/H9LWGeQ61laHDj/Z4=",
+    "hash": "sha256-9v9bwGFUyUe3MgPSdzXYwO0jlyHwvtNx8DSF5pZAkxQ=",
     "runtime": {
       "dotnet.6.0.27.zuwq2jt0mq.js": "sha256-26GREQBtzf9waPgLefTus1ODJdcs93wyAEl2cY4aiD0=",
       "dotnet.timezones.blat": "sha256-Hu3yTR07LZhOqoVr6q2tVZ2tv621ulhIVgZRupSxU6A=",
@@ -33,7 +33,7 @@
       "NAudio.Wasapi.dll": "sha256-YY7w5J1k56Zt/mS79q6BcFudloPYqfMh5cMCTWZr34I=",
       "NAudio.WinMM.dll": "sha256-dJoB67te3YsaA8UmOwTeasrez1LkzITXQSvG6T8YCVg=",
       "netstandard.dll": "sha256-F58zs+QtKAMZ2uUhUlRwX1qf2MvLgqa2swNsnmhMNiU=",
-      "Project-Biovocoder.dll": "sha256-SjoO1K0GA3veNUIDZJxdn1R77aV6gs9T91tSfSAsWWw=",
+      "Project-Biovocoder.dll": "sha256-z7AKJYVU7RZMvXbfruQBBJbTpkBUDZbcIK2SnK7jrG8=",
       "System.Collections.Concurrent.dll": "sha256-i/9L7QCuw7hmv/G1Cs7cuvGCBtT+qpZ48ZZ+hh3rpJc=",
       "System.Collections.dll": "sha256-FZeB0KMdbsU143nTZxi64uqk3gsHm10KuuL5u3TJX0M=",
       "System.ComponentModel.dll": "sha256-xgDLIZGuvvgBw0V4ccrqq+/ZWgG7HuLREDUFMneveJM=",
