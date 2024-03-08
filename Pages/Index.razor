@@ -36,6 +36,14 @@
 </div>
 
 @code {
-	public AudioFileReader? audioTest;
+	public WaveFormatConversionStream? audioTest;
+	protected override async Task OnInitializedAsync()
+	{
+		//audioTest = (WaveFormatConversionStream) await Http.GetStreamAsync("sounds/testing/switch.wav");
+	}
 
+	public void ConcatAudio()
+	{
+		//audioTest = new WaveFileReader("sounds/testing/switch.wav");
+	}
 }
